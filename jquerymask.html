@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+</head>
+<body>
+    <input type="text" class="cpf" placeholder="CPF">
+    <input type="text" class="cnpj" placeholder="CNPJ">
+<script>
+    $(document).ready(function(){
+        $('.cpf').mask('000.000.000-00', {reverse: true});
+        $('.cnpj').mask('00.000.000/0000-00', {reverse: true});
+    })
+</script>
+</body>
+</html>
